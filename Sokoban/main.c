@@ -9,9 +9,9 @@ int main()
     srand(time(NULL));
 
     char **tab = init_tab();
-    int xJ, yJ; // Joueur
-    int xB, yB; // Boîte
-    int xE, yE; // Emplacement
+    int xJ, yJ; // coordonnées Joueur
+    int xB, yB; // coordonnées Boîte
+    int xE, yE; // coordonnées Emplacement
 
     randomizer(tab, joueur, &xJ, &yJ);
     randomizer(tab, caisse, &xB, &yB);
