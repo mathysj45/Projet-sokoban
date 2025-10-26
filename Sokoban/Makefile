@@ -6,6 +6,8 @@ SRCS = main.c \
 	print_tab.c \
 	init_tab.c \
 	randomizer.c \
+	déplacement.c \
+	condition.c
 
 all: $(NAME)
 

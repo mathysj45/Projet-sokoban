@@ -15,7 +15,7 @@ void randomizer(char **tab, char symbole, int *x, int *y)
         *y = (rand() % (taille - 2)) + 1;   // évite les bords
     }
     
-    while (tab[*x][*y] != vide);    // doit être une case vide
+    while (tab[*y][*x] != vide);    // doit être une case vide
 
-    tab[*x][*y] = symbole;
+    tab[*y][*x] = symbole;
 }
