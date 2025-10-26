@@ -62,6 +62,8 @@ int main()
         else
         {
             printf("Déplacement impossible. Essayez une autre direction.\n");
+            sleep(2);
+            while (getchar() != '\n'); // vider le buffer
         }
     }
     liberer_tab(tab);
