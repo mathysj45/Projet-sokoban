@@ -6,7 +6,7 @@
 char **init_tab() 
 {
     char **tab = malloc(taille * sizeof(char *));
-    if (!tab) exit(EXIT_FAILURE);  // Si l'allocation échoue mettre fin au programme
+    if (!tab) exit(EXIT_FAILURE);  // Si l'allocation échoue met fin au programme
 
     for (int i = 0; i < taille; i++) 
     {

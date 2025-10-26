@@ -14,7 +14,7 @@ int main()
     int xB, yB; // coordonnées Boîte
     int xE, yE; // coordonnées Emplacement
     char direction; // direction de déplacement
-    int coups = 0; // nombre de coups effectués
+    int coups = 0; // nombre de coups
 
     randomizer(tab, joueur, &xJ, &yJ);
     randomizer(tab, caisse, &xB, &yB);

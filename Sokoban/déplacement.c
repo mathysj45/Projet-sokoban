@@ -19,7 +19,7 @@ int deplacement(char **tab, int *xJ, int *yJ, char direction)
     // Vérification des murs
     if (tab[newY][newX] == '#') return 0;
     
-    // Case vide ou emplacement : déplacement simple
+    // Case vide : déplacement simple
     if (tab[newY][newX] == ' ' || tab[newY][newX] == emplacement) 
     {
         tab[*yJ][*xJ] = ' ';  // Ancienne position devient vide

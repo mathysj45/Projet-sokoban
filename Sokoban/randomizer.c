@@ -16,6 +16,6 @@ void randomizer(char **tab, char symbole, int *x, int *y)
     }
     
     while (tab[*y][*x] != vide);    // doit être une case vide
-
-    tab[*y][*x] = symbole;
+                                // Attention ne pas inverser y et x sinon dédoublent les symboles
+    tab[*y][*x] = symbole; // placer le symbole
 }

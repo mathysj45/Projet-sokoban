@@ -11,7 +11,7 @@ int verifier_victoire(char **tab)
         {
             if (tab[i][j] == emplacement) 
             {
-                return 0;  // Il reste des emplacements vides
+                return 0;  // Il reste des emplacements vide
             }
         }
     }
