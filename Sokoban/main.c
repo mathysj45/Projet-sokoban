@@ -15,6 +15,7 @@ int main()
     int xE, yE; // coordonnées Emplacement
     char direction; // direction de déplacement
     int coups = 0; // nombre de coups
+    int resultat = -1;  // -1 = abandon, 0 = défaite, 1 = victoire
 
     randomizer(tab, joueur, &xJ, &yJ);
     randomizer(tab, caisse, &xB, &yB);
@@ -37,12 +38,14 @@ int main()
         if (verifier_victoire(tab))
             {
                 printf("Félicitations ! Vous avez triomphez du Sokoban en %d coups !\n", coups);
+                resultat = 1;
                 break;
             }
 
         if (verifier_defaite(tab))
             {
                 printf("Dommage ! Le Sokoban vous a terrassé !\n");
+                resultat = 0;
                 break;
             }
 
@@ -52,6 +55,7 @@ int main()
         if (direction == 'x')
         {
             printf("Partie abandonnée. Dommage !\n");
+            resultat = -1;
             break;
         }
 
@@ -62,10 +66,9 @@ int main()
         else
         {
             printf("Déplacement impossible. Essayez une autre direction.\n");
-            sleep(2);
-            while (getchar() != '\n'); // vider le buffer
         }
     }
+    save_game(tab, coups, resultat);
     liberer_tab(tab);
     exit(0);
 }

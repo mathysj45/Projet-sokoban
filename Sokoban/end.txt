@@ -1,0 +1,15 @@
+=== VICTOIRE ===
+Nombre de coups : 5
+
+Etat final du plateau :
+
+##########
+#        #
+#     oX #
+#        #
+#        #
+#        #
+#        #
+#        #
+#        #
+##########

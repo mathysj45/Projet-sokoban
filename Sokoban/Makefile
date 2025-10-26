@@ -7,7 +7,8 @@ SRCS = main.c \
 	init_tab.c \
 	randomizer.c \
 	déplacement.c \
-	condition.c
+	condition.c \
+	save_game.c
 
 all: $(NAME)
 
